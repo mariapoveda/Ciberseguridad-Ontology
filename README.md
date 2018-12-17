@@ -2,8 +2,11 @@
 
 Repository for the ontology in the CiberSeguridad Project
 
-Ontology URI: 
+Ontology IRI: http://ciberseg.linkeddata.es/def/OntologiaCiberseguridad 
 
-Current version of the ontology model: 
-https://github.com/mcsuarez/Ciberseguridad-Ontology/blob/master/diagrams/generalView-2.0.png
+Updated version of the ontology model:
+https://github.com/mcsuarez/Ciberseguridad-Ontology/blob/master/diagrams/UpdatedSchema.png
+
+Initial version of the ontology model: 
+https://github.com/mcsuarez/Ciberseguridad-Ontology/blob/master/diagrams/InitialSchema.png
 
