@@ -1,0 +1,654 @@
+[ {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Socorro Bernardos (OEG-UPM)\nMaría Poveda-Villalón (OEG-UPM)\nEdna Ruckhaus (OEG-UPM)"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Mari Carmen Suárez-Figueroa (OEG-UPM)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta ontología de ciberseguridad se basa en (a) la actualización y mejora de una ontología existente de productos de ciberseguridad (http://minetur.linkeddata.es/def/ontologiaProductos), y (b) su extensión a partir de nuevas clasificaciones, incluyendo mappings y sinónimos, así como términos extraídos de los corpus disponibles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ontologia de Ciberseguridad"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://contsem.unizar.es/def/sector-publico/pproc"
+  }, {
+    "@id" : "http://data.epo.org/linked-data/def/patent/"
+  }, {
+    "@id" : "http://minetur.linkeddata.es/def/ontologiaProductos#"
+  }, {
+    "@id" : "http://purl.org/ontology/bibo/"
+  }, {
+    "@id" : "http://usefulinc.com/ns/doap#"
+  }, {
+    "@id" : "http://www.w3.org/ns/org#"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Clase que representa una relación n-aria con respecto a clasificaciones existentes."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represent a n-ary relation with existing classifications."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassificationCode"
+  }, {
+    "@language" : "es",
+    "@value" : "Codigo de Clasificación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptCPV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "CodigodeClasificacionCPV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptIPC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "CodigodeClasificacionIPC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptIncibe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "CodigodeClasificacionIncibe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptInteco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "CodigodeClasificacionInteco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptNCL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "CodigodeClasificacionNCL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeCPV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClasificacionCPV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeIPC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClasificacionIPC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeIncibe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClasificacionIncibe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeInteco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : "ClasificacionInteco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeNCL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClasificacionNCL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeUNSPSC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClasificacionUNSPSC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptUNSPSC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "CodigodeClasificacionUNSPSC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Funcionalidad"
+  }, {
+    "@language" : "en",
+    "@value" : "Functionality"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Todo aquello que es apto para satisfacer, directa o indirectamente, una necesidad humana (RAE)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bien"
+  }, {
+    "@language" : "en",
+    "@value" : "Good"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#ProductOrService"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPattentApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Documento expedido por una autoridad en que se acredita una condición o un mérito o se da la autorización para hacer algo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Patent"
+  }, {
+    "@language" : "es",
+    "@value" : "Patente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.epo.org/linked-data/def/patent/ApplicationKind"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPrivateOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Empresa:  Unidad de organización dedicada a actividades industriales, mercantiles o de prestación de servicios con fines lucrativos. (RAE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "EmpresaPrivada"
+  }, {
+    "@language" : "en",
+    "@value" : "PrivateOrganization\nCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Product"
+  }, {
+    "@language" : "es",
+    "@value" : "Producto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPublicOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Organización Pública: Organización con fines administrativos, representativos, de resolución o servicios (organismos gubernamentales)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "EmpresaPublica"
+  }, {
+    "@language" : "en",
+    "@value" : "PublicOrganization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadcallsFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A public organization calls for a tender."
+  }, {
+    "@language" : "es",
+    "@value" : "Una Organizacion Publica convoca una Licitacion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPublicOrganization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "callsFor"
+  }, {
+    "@language" : "es",
+    "@value" : "convoca"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/procurement/public-contracts#Tender"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Good has associated a Functionality"
+  }, {
+    "@language" : "es",
+    "@value" : "Un Bien tiene asociadas Funcionalidades"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadFunctionality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasAssociated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Tender has associated a Contract."
+  }, {
+    "@language" : "es",
+    "@value" : "Una Licitacion tiene asociado un Contrato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/procurement/public-contracts#Tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAssociated"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene asociado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/procurement/public-contracts#Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasClassificationCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasClassificationCode"
+  }, {
+    "@language" : "es",
+    "@value" : "tieneCodigoDeClasificacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasClassificationCodeofPatent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "hasClassificationCodeOfPatent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPattentApplication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tieneCodigodeClasificacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasClassificationCodeofTender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "hasClassificationCodeOfTender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/procurement/public-contracts#Tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tieneCodigodeClasificacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasCode"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene código"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadinvolves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Contract involves a Good"
+  }, {
+    "@language" : "es",
+    "@value" : "Un Contrato involucra un Bien"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/procurement/public-contracts#Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "involucra"
+  }, {
+    "@language" : "en",
+    "@value" : "involves"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadisAffectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Good is affected by a Patent"
+  }, {
+    "@language" : "es",
+    "@value" : "Un Bien esta afectado por una Patente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "estaAfectadoPor"
+  }, {
+    "@language" : "en",
+    "@value" : "isAffectedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPattentApplication"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadisOwnerOF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Organization is owner of a Patent (PatentApplication)."
+  }, {
+    "@language" : "es",
+    "@value" : "Una Organización es propietaria de una Patente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "es propietario de"
+  }, {
+    "@language" : "en",
+    "@value" : "isOwnerOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPattentApplication"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadoffers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : "An Organization offers a Good (Product or Service)"
+  }, {
+    "@language" : "es",
+    "@value" : "Una Organizacion ofrece un Bien (producto o servicio)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "offers"
+  }, {
+    "@language" : "es",
+    "@value" : "ofrece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadparticipatesIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Organization participates in a Publication"
+  }, {
+    "@language" : "es",
+    "@value" : "Una Organizacion esta involucrada en una Publicacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "participaEn"
+  }, {
+    "@language" : "en",
+    "@value" : "participatesIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/bibo/Article"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadscope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "ambito"
+  }, {
+    "@language" : "en",
+    "@value" : "scope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadsigns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Organization signs a Contract."
+  }, {
+    "@language" : "es",
+    "@value" : "Una Organizacion firma un Contrato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "firma"
+  }, {
+    "@language" : "en",
+    "@value" : "signs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/procurement/public-contracts#Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadworksIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Organization works in a Project"
+  }, {
+    "@language" : "es",
+    "@value" : "Una Organizacion trabaja en un Proyecto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "trabajaEn"
+  }, {
+    "@language" : "en",
+    "@value" : "worksIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://usefulinc.com/ns/doap#Project"
+  } ]
+}, {
+  "@id" : "http://data.epo.org/linked-data/def/patent/ApplicationKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/procurement/public-contracts#Contract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Acuerdo, generalmente escrito, por el que dos o más partes se comprometen recíprocamente a respetar y cumplir una serie de condiciones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract"
+  }, {
+    "@language" : "es",
+    "@value" : "Contrato"
+  } ]
+}, {
+  "@id" : "http://purl.org/procurement/public-contracts#Tender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/procurement/public-contracts#Contract"
+  } ]
+} ]

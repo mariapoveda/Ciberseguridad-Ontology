@@ -1,0 +1,179 @@
+{
+  "@context" : {
+    "OntologiaCiberseguridadhasClassificationCodeofTender" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasClassificationCodeofTender",
+      "@type" : "@id"
+    },
+    "BusinessEntity" : {
+      "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
+    },
+    "OntologiaCiberseguridadhas" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhas",
+      "@type" : "@id"
+    },
+    "ProductOrService" : {
+      "@id" : "http://purl.org/goodrelations/v1#ProductOrService"
+    },
+    "OntologiaCiberseguridadhasClassificationCodeofPatent" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasClassificationCodeofPatent",
+      "@type" : "@id"
+    },
+    "OntologiaCiberseguridadoffers" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadoffers",
+      "@type" : "@id"
+    },
+    "OntologiaCiberseguridadcallsFor" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadcallsFor",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "OntologiaCiberseguridadPublicOrganization" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPublicOrganization"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "OntologiaCiberseguridadisOwnerOF" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadisOwnerOF",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "OntologiaCiberseguridadhasCode" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OntologiaCiberseguridadConceptSchemeIPC" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeIPC"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OntologiaCiberseguridadConceptIncibe" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptIncibe"
+    },
+    "OntologiaCiberseguridadisAffectedBy" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadisAffectedBy",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "Contract" : {
+      "@id" : "http://purl.org/procurement/public-contracts#Contract"
+    },
+    "OntologiaCiberseguridadConceptSchemeNCL" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeNCL"
+    },
+    "OntologiaCiberseguridadPattentApplication" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPattentApplication"
+    },
+    "OntologiaCiberseguridadFunctionality" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadFunctionality"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Article" : {
+      "@id" : "http://purl.org/ontology/bibo/Article"
+    },
+    "Tender" : {
+      "@id" : "http://purl.org/procurement/public-contracts#Tender"
+    },
+    "OntologiaCiberseguridadClassification" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassification"
+    },
+    "OntologiaCiberseguridadConceptUNSPSC" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptUNSPSC"
+    },
+    "OntologiaCiberseguridadConceptIPC" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptIPC"
+    },
+    "OntologiaCiberseguridadhasAssociated" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasAssociated",
+      "@type" : "@id"
+    },
+    "Project" : {
+      "@id" : "http://usefulinc.com/ns/doap#Project"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "OntologiaCiberseguridadConceptSchemeCPV" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeCPV"
+    },
+    "OntologiaCiberseguridadConceptInteco" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptInteco"
+    },
+    "OntologiaCiberseguridadsigns" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadsigns",
+      "@type" : "@id"
+    },
+    "OntologiaCiberseguridadConceptCPV" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptCPV"
+    },
+    "OntologiaCiberseguridadparticipatesIn" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadparticipatesIn",
+      "@type" : "@id"
+    },
+    "OntologiaCiberseguridadService" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadService"
+    },
+    "OntologiaCiberseguridadPrivateOrganization" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadPrivateOrganization"
+    },
+    "OntologiaCiberseguridadConceptNCL" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptNCL"
+    },
+    "OntologiaCiberseguridadConceptSchemeIncibe" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeIncibe"
+    },
+    "OntologiaCiberseguridadConceptSchemeInteco" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeInteco"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ApplicationKind" : {
+      "@id" : "http://data.epo.org/linked-data/def/patent/ApplicationKind"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "OntologiaCiberseguridadscope" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadscope",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OntologiaCiberseguridadProduct" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadProduct"
+    },
+    "OntologiaCiberseguridadGood" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadGood"
+    },
+    "OntologiaCiberseguridadworksIn" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadworksIn",
+      "@type" : "@id"
+    },
+    "OntologiaCiberseguridadhasClassificationCode" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadhasClassificationCode",
+      "@type" : "@id"
+    },
+    "OntologiaCiberseguridadinvolves" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadinvolves",
+      "@type" : "@id"
+    },
+    "OntologiaCiberseguridadConceptSchemeUNSPSC" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadConceptSchemeUNSPSC"
+    },
+    "OntologiaCiberseguridadClassificationCode" : {
+      "@id" : "http://ciberseg.linkeddata.es/def/OntologiaCiberseguridadClassificationCode"
+    }
+  }
+}
